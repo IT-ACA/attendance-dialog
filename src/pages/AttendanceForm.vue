@@ -124,7 +124,6 @@
                   </p>        
                 </td>  
                 <td>
-              
                   <v-layout wrap align-center>
                     <v-flex xs12 sm6 d-flex>
                       <v-checkbox            
@@ -178,8 +177,7 @@ export default  {
   components: {
     // 'confirm-dialog': ConfirmDialog, ? 
   },
-
-   data() {
+  data() {
     return {
       attendance:[],
       eventData: [],
