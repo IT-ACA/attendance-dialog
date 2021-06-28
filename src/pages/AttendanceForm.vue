@@ -68,46 +68,35 @@
             </thead>
             <tbody>
               <tr  v-for="(student,index) in eventData.students" :key="index">
-              <td> 
-                <p class="font-weight-bold student_name">
-                {{student["Student classmates startup::First Name"]}}
-                {{student["Student classmates startup::Last Name"]}} 
-                </p>   
-              </td>  
-              <td>
-
-                <v-layout wrap align-center>
-                  <v-flex xs12 sm6 d-flex>
-
-                    <!-- V IMPORTANT: to make v-selects work independent of each other
-                    @input is required which calls a function that passes the selected 
-                    value. Index in this case is the array index of the student. Together
-                    these can perform the update to the records to append attendance status.
-                    - ref - https://vue-select.org/guide/loops.html 
-                    - also check - https://vue-select.org/guide/values.html#getting-and-setting
-                    --> 
-                    <v-checkbox            
-                        v-model="attendance[index].present"
-                        @change="updateAttendance(index)"                    
-                    ></v-checkbox>
-                  </v-flex>
-                </v-layout>  
-              </td>
-              <td>
-                <v-layout wrap align-center>
-                <!-- <v-flex xs12 sm6 d-flex> -->
-                  <v-textarea
-                    label="Note"
-                    rows="1"
-                    row-height="15"
-                    class="remarks"
-                    @input="remark => updateRemarks(index,remark)"           
-                  ></v-textarea>
-                <!-- </v-flex> -->
-                </v-layout>
-              </td>
-            
-          
+                <td> 
+                  <p class="font-weight-bold student_name">
+                  {{student["Student classmates startup::First Name"]}}
+                  {{student["Student classmates startup::Last Name"]}} 
+                  </p>   
+                </td>  
+                <td>
+                  <v-layout wrap align-center>
+                    <v-flex xs12 sm6 d-flex>
+                      <v-checkbox            
+                          v-model="attendance[index].present"
+                          @change="updateAttendance(index)"                    
+                      ></v-checkbox>
+                    </v-flex>
+                  </v-layout>  
+                </td>
+                <td>
+                  <v-layout wrap align-center>
+                  <!-- <v-flex xs12 sm6 d-flex> -->
+                    <v-textarea
+                      label="Note"
+                      rows="1"
+                      row-height="15"
+                      class="remarks"
+                      @input="remark => updateRemarks(index,remark)"           
+                    ></v-textarea>
+                  <!-- </v-flex> -->
+                  </v-layout>
+                </td>
               </tr>
             </tbody>
           </template>
