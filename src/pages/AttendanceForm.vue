@@ -158,7 +158,6 @@
     
           <v-card-actions>
             <v-btn color="error" @click="cancel">Cancel</v-btn>
-            <!-- what is going on with @click -->
             <v-btn v-show="eventData.outcome !== 'done'" class="btn btn-primary" @click="submit" color="primary">
               Submit
             </v-btn> 
@@ -192,6 +191,7 @@ export default  {
   },
   methods: {
     submit() {
+      // TODD
       // UI/UX ideas 
       // User feedback that attendance is being uploaded
       // Dialog modal to notify submit success/failure after upload has completed
@@ -224,7 +224,6 @@ export default  {
         console.log('INDEX of group student attendance record : ', this.attendance[index])
       }
     },
-
     updateRemarks(i, t) {
       this.attendance[i].remarks = t
       console.log(this.attendance[i].remarks)
