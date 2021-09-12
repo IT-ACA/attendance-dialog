@@ -1,0 +1,55 @@
+
+[
+  {
+    
+      "_kp_classes_id": "CLA000239287",
+      "_kf_group_schedule_id": "",
+      "outcome": "",
+      "scheduled date": "12/02/2020",
+      "schedule time START": "19:00:00",
+      "schedule time END": "20:30:00",
+      "_kf_teacher_id": "T00000475",
+      "attendance validated up to this date": "",
+      "duration FORMER": "",
+      "Attendance Submitted": "",
+      "status": "",
+      "Updated": "",
+      "Note To Teacher": "",
+      "_kf_registration_id": "R00043356"
+    ,
+    "portalData": {
+      "Registration": [
+        {
+          "recordId": "57280",
+          "Registration::type of class": "Corporate Private online",
+          "modId": "248"
+        }
+      ],
+      "Student": [
+        {
+          "recordId": "27150",
+          "Student::First Name": "Maxime",
+          "Student::Last Name": "Gamache-Poitras",
+          "Student::_kp_student_id": "S00020816",
+          "modId": "58"
+        }
+      ]
+    },
+    "recordId": "239782",
+    "modId": "3",
+    "portalDataInfo": [
+      {
+        "database": "ACA database for R&D (2020 10 21)",
+        "table": "Registration",
+        "foundCount": 1,
+        "returnedCount": 1
+      },
+      {
+        "database": "ACA database for R&D (2020 10 21)",
+        "table": "Student",
+        "foundCount": 1,
+        "returnedCount": 1
+      }
+    ]
+  }
+]

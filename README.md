@@ -1,4 +1,4 @@
-# attendance-dialog
+# attendance-dialog UI
 
 ## Project setup
 ```
